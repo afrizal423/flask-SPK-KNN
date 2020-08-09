@@ -8,12 +8,6 @@ from fungsi import datapemohon, masukkan_nilai_k, hitung, urutkan
 @app.route('/', methods=['GET', 'POST'])
 def index():
   if request.method=="POST":
-    # hasil_prediksi = clf.predict([[request.form['palo'],
-    #                               request.form['lelo'],
-    #                               request.form['pako'],
-    #                               request.form['leko']]])
-
-    # return render_template("index.html", hasil = hasil_prediksi[0])
     # print(request.form.getlist('kriteria[]'))
     data = request.form.getlist('kriteria[]')
     # print(data[2])
